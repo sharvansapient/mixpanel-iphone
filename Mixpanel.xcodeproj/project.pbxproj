@@ -228,8 +228,6 @@
 		E1F161971E68C59400391AE3 /* MixpanelPeoplePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 519C54931D131F4F00407F56 /* MixpanelPeoplePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E1F161981E68C59600391AE3 /* MPNetworkPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 517ABB721D14B87C00FF8061 /* MPNetworkPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E1F161991E68C59900391AE3 /* MixpanelPeople.h in Headers */ = {isa = PBXBuildFile; fileRef = 519C548A1D131E6500407F56 /* MixpanelPeople.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F083566F1DB1AF72000A610C /* MixpanelWatchProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F083566C1DB1AF72000A610C /* MixpanelWatchProperties.h */; };
-		F08356711DB1AF72000A610C /* MixpanelWatchProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F083566D1DB1AF72000A610C /* MixpanelWatchProperties.m */; };
 		F0ACBDEC1F8C46B400ABF03D /* MPConnectIntegrations.h in Headers */ = {isa = PBXBuildFile; fileRef = F0ACBDEA1F8C46B400ABF03D /* MPConnectIntegrations.h */; };
 		F0ACBDED1F8C46B400ABF03D /* MPConnectIntegrations.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ACBDEB1F8C46B400ABF03D /* MPConnectIntegrations.m */; };
 		F0B0E7AB1F05B8CA00F0FF08 /* NSThread+MPHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B0E7A91F05B8CA00F0FF08 /* NSThread+MPHelpers.h */; };
@@ -929,7 +927,6 @@
 				E1F161961E68C58B00391AE3 /* MixpanelPrivate.h in Headers */,
 				E1F161971E68C59400391AE3 /* MixpanelPeoplePrivate.h in Headers */,
 				E1F161981E68C59600391AE3 /* MPNetworkPrivate.h in Headers */,
-				F083566F1DB1AF72000A610C /* MixpanelWatchProperties.h in Headers */,
 				F0F179F61DB6CA12003DFD43 /* MPLogger.h in Headers */,
 				45C5F9A721470F16001B08CE /* MixpanelGroup.h in Headers */,
 				51D221011C595EB1003ECFB3 /* MPFoundation.h in Headers */,
@@ -1220,7 +1217,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08356711DB1AF72000A610C /* MixpanelWatchProperties.m in Sources */,
 				F0FA7A711DB020E800AA8006 /* MPNetwork.m in Sources */,
 				F0FA7A6C1DB014B500AA8006 /* Mixpanel.m in Sources */,
 				457CA2072141CD5C003B3862 /* MixpanelType.m in Sources */,

@@ -12,9 +12,9 @@
 #import "MixpanelPrivate.h"
 #import "MPLogger.h"
 
-#if defined(MIXPANEL_WATCHOS)
-#import "MixpanelWatchProperties.h"
-#endif
+//#if defined(MIXPANEL_WATCHOS)
+//#import "MixpanelWatchProperties.h"
+//#endif
 
 @implementation MixpanelPeople
 
@@ -37,7 +37,8 @@
 - (NSString *)deviceSystemVersion
 {
 #if defined(MIXPANEL_WATCHOS)
-    return [MixpanelWatchProperties systemVersion];
+    //return [MixpanelWatchProperties systemVersion];
+    return @"watchOS";
 #elif defined(MIXPANEL_MACOS)
     return [NSProcessInfo processInfo].operatingSystemVersionString;
 #else

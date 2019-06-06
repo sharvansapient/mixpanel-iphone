@@ -21,7 +21,8 @@
 #import "NSThread+MPHelpers.h"
 #endif
 #if defined(MIXPANEL_WATCHOS)
-#import "MixpanelWatchProperties.h"
+// TODO: Remove the WKInterfaceDevice reference due to Apple Rejection(might be false positvie) before the issue being resolved with Apple
+//#import "MixpanelWatchProperties.h"
 #import <WatchKit/WatchKit.h>
 #elif defined(MIXPANEL_MACOS)
 #import <IOKit/IOKitLib.h>
@@ -1480,7 +1481,9 @@ typedef NSDictionary*(^PropertyUpdate)(NSDictionary*);
 - (NSDictionary *)collectDeviceProperties
 {
 #if defined(MIXPANEL_WATCHOS)
-    return [MixpanelWatchProperties collectDeviceProperties];
+    // TODO: Remove the WKInterfaceDevice reference due to Apple Rejection(might be false positvie) before the issue being resolved with Apple
+    //return [MixpanelWatchProperties collectDeviceProperties];
+    return @{};
 #elif defined(MIXPANEL_MACOS)
     CGSize size = [NSScreen mainScreen].frame.size;
     return @{
